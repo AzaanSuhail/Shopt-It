@@ -1,8 +1,11 @@
+import { Navigate, useNavigate } from "react-router-dom";
 export const Navbar = () => {
+ const navigate=useNavigate();
+
   return (
     <header className="flex bg-green-900 py-4 px-8 text-slate-50">
       <div>
-        <h1 className="text-5xl">Shop It</h1>
+        <h1 onClick={()=>navigate('/')} className="text-4xl hover:cursor-pointer">Shop It</h1>
       </div>
       <nav className="ml-auto flex gap-8">
         <i className="material-icons text-3xl hover:cursor-pointer">favorite</i>

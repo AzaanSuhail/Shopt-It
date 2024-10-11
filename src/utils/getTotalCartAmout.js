@@ -1,0 +1,1 @@
+export const getTotalCartAmout=(cart)=>cart?.length>0 && cart.reduce((acc,curr)=>acc+curr.price,0)
