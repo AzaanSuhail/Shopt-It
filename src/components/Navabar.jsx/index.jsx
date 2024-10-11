@@ -8,8 +8,8 @@ export const Navbar = () => {
         <h1 onClick={()=>navigate('/')} className="text-4xl hover:cursor-pointer">Shop It</h1>
       </div>
       <nav className="ml-auto flex gap-8">
-        <i className="material-icons text-3xl hover:cursor-pointer">favorite</i>
-        <i className="material-icons text-3xl hover:cursor-pointer">
+        <i onClick={()=>navigate('/wishlist')} className="material-icons text-3xl hover:cursor-pointer">favorite</i>
+        <i onClick={()=>navigate('/cart')} className="material-icons text-3xl hover:cursor-pointer">
           shopping_cart
         </i>
         <i className="material-icons text-3xl hover:cursor-pointer  ">
